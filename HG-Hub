@@ -28,21 +28,25 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
-setclipboard("discord.gg/GGhDPEvz95")
-
  Rayfield:Notify({
     Title = "Discord",
-    Content = "Discord link copied",
+    Content = "Copy Discord Link?",
     Duration = 5.5,
     Image = 4483362458,
     Actions = { -- Notification Buttons
        Ignore = {
-          Name = "Ok!",
+          Name = "Yes!",
           Callback = function()
-          print("1")
+            setclipboard("discord.gg/GGhDPEvz95")
        end
     },
+    Accept = {
+      Name = "No!",
+      Callback = function()
+        print("Ok D:")
+   end
  },
+ }
  })
 
  local Home = Window:CreateTab("Home", 4483362458) -- Title, Image
@@ -64,6 +68,13 @@ local thx = [[
 if game.PlaceId == 2474168535 then
    local MainSec = Main:CreateSection("Westbound")
 
+   Rayfield:Notify({
+      Title = "Game Detected:",
+      Content = "Westbound",
+      Duration = 5.5,
+      Image = 4483362458,
+   })
+
    local Button = Main:CreateButton({
       Name = "WB HemLish Script",
       Callback = function()
@@ -80,6 +91,13 @@ if game.PlaceId == 2474168535 then
 
 elseif game.PlaceId == 2788229376 then  -- Da Hood
     local MainSec = Main:CreateSection("Da Hood")
+
+    Rayfield:Notify({
+      Title = "Game Detected:",
+      Content = "Da Hood",
+      Duration = 5.5,
+      Image = 4483362458,
+   })
 
     local Button = Main:CreateButton({
         Name = "Vortex",
@@ -106,6 +124,13 @@ elseif game.PlaceId == 2788229376 then  -- Da Hood
 elseif game.PlaceId == 4520749081 then -- King Legacy
 
     local MainSec = Main:CreateSection("King Legacy")
+
+    Rayfield:Notify({
+      Title = "Game Detected:",
+      Content = "King Legacy",
+      Duration = 5.5,
+      Image = 4483362458,
+   })
 
     local Button = Main:CreateButton({
         Name = "Mukuro Hub",
