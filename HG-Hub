@@ -59,8 +59,9 @@ LP = Playerss.LocalPlayer
  local UniversalSec = Universal:CreateSection("LocalPlayer")
 
 local thx = [[
-HUGGUIYT 
-C1
+#1 C1
+#2 HUGGUIYT 
+
 
 Discord: discord.gg/GGhDPEvz95
  ]]
