@@ -1,6 +1,4 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
---LoadingFrame.Version.Text = "V 1.0.0"
-
 
 local Window = Rayfield:CreateWindow({
     Name = "HG",
@@ -16,7 +14,7 @@ local Window = Rayfield:CreateWindow({
        Invite = "GGhDPEvz95", -- The Discord invite code, do not include discord.gg/
        RememberJoins = false -- Set this to false to make them join the discord every time they load it up
     },
-    KeySystem = true, -- Set this to true to use our key system
+    KeySystem = true,
     KeySettings = {
        Title = "HG Hub",
        Subtitle = "Key System",
@@ -28,9 +26,13 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
+ Playerss = game:GetService("Players")
+LP = Playerss.LocalPlayer
+
+
  Rayfield:Notify({
     Title = "Discord",
-    Content = "Copy Discord Link?",
+    Content = "Copy the discord link?",
     Duration = 5.5,
     Image = 4483362458,
     Actions = { -- Notification Buttons
@@ -51,19 +53,57 @@ local Window = Rayfield:CreateWindow({
 
  local Home = Window:CreateTab("Home", 4483362458) -- Title, Image
  local Main = Window:CreateTab("Scripts", 4483362458) -- Title, Image
- --local Hubs = Window:CreateTab("Hubs", 4483362458) -- Title, Image
+ local Universal = Window:CreateTab("Universal", 4483362458) -- Title, Image
  
  local CreditSec = Home:CreateSection("Credits")
- --local HubsSec = Hubs:CreateSection("Hubs")
+ local UniversalSec = Universal:CreateSection("LocalPlayer")
 
 local thx = [[
-    HUGGUIYT 
-    Cavera 165
+HUGGUIYT 
+C1
 
-    Discord: discord.gg/GGhDPEvz95
+Discord: discord.gg/GGhDPEvz95
  ]]
 
- local CreditosOw = Home:CreateParagraph({Title = "Criadores", Content = thx})
+ local CreditosOw = Home:CreateParagraph({Title = "Creators", Content = thx})
+
+ local WalkSpeedSlider = Universal:CreateSlider({
+   Name = "Walkspeed",
+   Range = {16, 300},
+   Increment = 1,
+   CurrentValue = 10,
+   Flag = "WSSlider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      LP.Character.Humanoid.WalkSpeed = Value
+   end,
+})
+
+local JumpPowerSlider = Universal:CreateSlider({
+   Name = "JumpPower",
+   Range = {50, 500},
+   Increment = 1,
+   CurrentValue = 10,
+   Flag = "JPSlider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      LP.Character.Humanoid.JumpPower = Value
+   end,
+})
+
+local FlyButtonUniversal = Universal:CreateButton({
+   Name = "Fly [E]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ScPtD/some-scripts/main/Fly349298478y9f7ruhew"))()   
+   end,
+})
+
+   local UniversalScriptsSec = Universal:CreateSection("Scripts")
+
+   local IYButtonUniversal = Universal:CreateButton({
+      Name = "Infinite Yield",
+      Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+         end
+   })
 
 if game.PlaceId == 2474168535 then
    local MainSec = Main:CreateSection("Westbound")
@@ -75,15 +115,15 @@ if game.PlaceId == 2474168535 then
       Image = 4483362458,
    })
 
-   local Button = Main:CreateButton({
-      Name = "WB HemLish Script",
+   local Bbnnbbnbnnbbnutton = Main:CreateButton({
+      Name = "WB HemLish Script (Silent Aim, ESP, FastRob and more",
       Callback = function()
          loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/HemLish/Game/main/WestBound.lua"))()
       end,
    })
 
-   local Button = Main:CreateButton({
-      Name = "PvP Script",
+   local Butfhhfghgfnhfgfhton = Main:CreateButton({
+      Name = "PvP Script (ESP, Aimbot, AutoFarm and more)",
       Callback = function()
           loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/westbound%20aimbot'))()
       end,
@@ -99,25 +139,31 @@ elseif game.PlaceId == 2788229376 then  -- Da Hood
       Image = 4483362458,
    })
 
-    local Button = Main:CreateButton({
+    local Budfggfdgdfdfgdffgdfdgtton = Main:CreateButton({
         Name = "Vortex",
         Callback = function()
             loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/vortex%20da%20hood'))()
         end,
      })
 
-     local Button = Main:CreateButton({
+     local Butrwrwerwerewrwerton = Main:CreateButton({
         Name = "Ray X",
         Callback = function()
             loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
         end,
      })
 
-     local Button = Main:CreateButton({
+     local Buttzxccczzxzxzcon = Main:CreateButton({
         Name = "Faded V3 - Toggle Key is V",
         Callback = function()
             _G.Toggles = "V"
             loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
+        end,
+     })
+     local Bubcbvvcbbvcbvtton = Main:CreateButton({
+        Name = "Nukermode Gui",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))() 
         end,
      })
 
@@ -132,18 +178,136 @@ elseif game.PlaceId == 4520749081 then -- King Legacy
       Image = 4483362458,
    })
 
-    local Button = Main:CreateButton({
+    local Butcvbcbvbcvvbcton = Main:CreateButton({
         Name = "Mukuro Hub",
         Callback = function()
             loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
         end,
      })
 
-     local Button = Main:CreateButton({
+     local ghgfnbmbn = Main:CreateButton({
         Name = "One X Hub",
         Callback = function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/xOne2/King-Legacy/main/README.md"))()
         end,
      })
-     
+   
+   elseif game.PlaceId == 155615604 then -- Prision Life
+      local MainSec = Main:CreateSection("Prision Life")
+
+      Rayfield:Notify({
+         Title = "Game Detected:",
+         Content = "Prision Life",
+         Duration = 5.5,
+         Image = 4483362458,
+         })
+
+   
+   local hfgdcszxc = Main:CreateButton({
+      Name = "Admin Commands",
+      Callback = function()
+         loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+      end,
+   })
+
+   local juthgf = Main:CreateButton({
+      Name = "Silent Aim",
+      Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/ScPtD/some-scripts/main/S3424342AimPL'))()
+      end,
+   })
+
+   local werdfs = Main:CreateButton({
+      Name = "Antilope GUI",
+      Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/ScPtD/some-scripts/main/rwerweg634g654f74367373AntPLGui'))()
+      end,
+   })
+
+   local GetGunsSecPL = Main:CreateSection("Get Items")
+
+
+   local dadadasgfe = Main:CreateButton({
+      Name = "Get MM9",
+      Callback = function()
+         workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver.M9.ITEMPICKUP)
+      end,
+   })
+
+
+  local hjty = Main:CreateButton({
+   Name = "Get Remington 870",
+   Callback = function()
+      workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+   end,
+})
+
+local trhhgr = Main:CreateButton({
+   Name = "Get AK-47",
+   Callback = function()
+      workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+   end,
+})
+
+local fsdf = Main:CreateButton({
+   Name = "Get M4A1",
+   Callback = function()
+      workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver.M4A1.ITEMPICKUP)
+   end,
+})
+
+
+local gfdgrh = Main:CreateButton({
+   Name = "Get Riot Shield",
+   Callback = function()
+      workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Riot Shield"].ITEMPICKUP)
+   end,
+})
+
+local GUIsPLSec = Main:CreateSection("Ingame Guis")
+
+local FadeGuiPLToggle = Main:CreateToggle({
+   Name = "Fade Gui",
+   CurrentValue = false,
+   Flag = "FadeGuiPL", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      LP.PlayerGui.Home.fadeFrame.Visible = Value
+   end,
+})
+
+local CraftFramePLToggle = Main:CreateToggle({
+   Name = "Crafting Frame",
+   CurrentValue = false,
+   Flag = "CraftFrameToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      LP.PlayerGui.Home.hud.CraftingFrame.Visible = Value
+   end,
+})
+
+local VotekickFramePLToggle = Main:CreateToggle({
+   Name = "Votekick Frame",
+   CurrentValue = false,
+   Flag = "VotekickFramePL", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      LP.PlayerGui.Home.hud.votekickFrame.Visible = Value
+   end,
+})
+
+local DiaryFramePLToggle = Main:CreateToggle({
+   Name = "diaryOfNamapo Frame",
+   CurrentValue = false,
+   Flag = "diaryOfNamapoFramePL", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      LP.PlayerGui.Home.hud.diaryOfNamapo.Visible = Value
+   end,
+})
+
+
+else
+   Rayfield:Notify({
+      Title = "Error",
+      Content = "Game Not Supported!",
+      Duration = 5.5,
+      Image = 4483362458,
+   })
 end
