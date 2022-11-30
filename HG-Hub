@@ -101,7 +101,8 @@ local UniversalGUIButton = Universal:CreateButton({
    Name = "Universal Gui",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/ScPtD/some-scripts/main/Universal456356gfertgdfGui32o43jljrertjk453gsdf54"))()
-})
+   end,
+   })
 
    local UniversalScriptsSec = Universal:CreateSection("Scripts")
 
