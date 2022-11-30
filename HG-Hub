@@ -68,6 +68,13 @@ Discord: discord.gg/GGhDPEvz95
 
  local CreditosOw = Home:CreateParagraph({Title = "Creators:", Content = thx})
 
+ local Button = Home:CreateButton({
+   Name = "Destroy GUI",
+   Callback = function()
+      Rayfield:Destroy()
+   end,
+})
+ 
  local WalkSpeedSlider = Universal:CreateSlider({
    Name = "Walkspeed",
    Range = {16, 300},
@@ -111,6 +118,13 @@ local FlyButtonUniversal = Universal:CreateButton({
       Name = "Universal Gui",
       Callback = function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/ScPtD/some-scripts/main/Universal456356gfertgdfGui32o43jljrertjk453gsdf54"))()
+      end,
+   })
+
+   local DomainXUniversalButton = Universal:CreateButton({
+      Name = "Domain X",
+      Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
       end,
    })
 
