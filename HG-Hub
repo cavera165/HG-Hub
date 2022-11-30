@@ -112,7 +112,7 @@ local FlyButtonUniversal = Universal:CreateButton({
       Callback = function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/ScPtD/some-scripts/main/Universal456356gfertgdfGui32o43jljrertjk453gsdf54"))()
       end,
-      })
+   })
 
 if game.PlaceId == 2474168535 then
    local MainSec = Main:CreateSection("Westbound")
