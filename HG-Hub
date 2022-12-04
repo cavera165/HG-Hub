@@ -68,7 +68,7 @@ Discord: discord.gg/GGhDPEvz95
 
  local CreditosOw = Home:CreateParagraph({Title = "Creators:", Content = thx})
 
- local Button = Home:CreateButton({
+ local B9797utton = Home:CreateButton({
    Name = "Destroy GUI",
    Callback = function()
       Rayfield:Destroy()
@@ -136,7 +136,7 @@ local FlyButtonUniversal = Universal:CreateButton({
    })
 
 if game.PlaceId == 2474168535 then
-   local MainSec = Main:CreateSection("Westbound")
+   local Ma8865inSec = Main:CreateSection("Westbound")
 
    Rayfield:Notify({
       Title = "Game Detected:",
@@ -593,7 +593,7 @@ if game.PlaceId == 2474168535 then
    })
 
 elseif game.PlaceId == 2788229376 then  -- Da Hood
-    local MainSec = Main:CreateSection("Da Hood")
+    local Mai2323nSec = Main:CreateSection("Da Hood")
 
     Rayfield:Notify({
       Title = "Game Detected:",
@@ -632,7 +632,7 @@ elseif game.PlaceId == 2788229376 then  -- Da Hood
 
 elseif game.PlaceId == 4520749081 then -- King Legacy
 
-    local MainSec = Main:CreateSection("King Legacy")
+    local Main645643Sec = Main:CreateSection("King Legacy")
 
     Rayfield:Notify({
       Title = "Game Detected:",
@@ -656,7 +656,7 @@ elseif game.PlaceId == 4520749081 then -- King Legacy
      })
    
    elseif game.PlaceId == 155615604 then -- Prision Life
-      local MainSec = Main:CreateSection("Prision Life")
+      local MainS64565ec = Main:CreateSection("Prision Life")
 
       Rayfield:Notify({
          Title = "Game Detected:",
@@ -765,47 +765,145 @@ local DiaryFramePLToggle = Main:CreateToggle({
    end,
 })
 
-elseif game.PlaceId == 2753915549 or 7449423635 or 4442272183 then --Blox Fruits
-   local MainSec = Main:CreateSection("Blox Fruits")
+
+elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
+   local Mainfd443Sec = Main:CreateSection("YouTube Simulator Z")
 
    Rayfield:Notify({
       Title = "Game Detected:",
-      Content = "Blox Fruits",
+      Content = "YouTube Simulator Z",
       Duration = 5.5,
       Image = 4483362458,
       })
 
-      local AutoConfettiBloxFruitsToggle = Main:CreateToggle({
-         Name = "Auto Confetti",
+      local gdsfggresgdfgdgd = Main:CreateToggle({
+         Name = "Auto Rebirth",
          CurrentValue = false,
-         Flag = "AutoConfettiBloxFruitsToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+         Flag = "Fldkljjhjtfdfgfs3424rftesd", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
          Callback = function(Value)
-         _G.AutoConfetti = Value
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Confetti"))() 
+            _G.Rebirth = Value
+
+            while _G.Rebirth == true do
+            
+            local bool_1 = false;
+            local Target = game:GetService("ReplicatedStorage").Remotes.Events.BCUT1;
+            Target:FireServer(bool_1);
+            wait(0.000000000000000000000000000000000000000000000000000000001)
+            
+            end
          end,
       })
 
-      local ZenHubBloxFruitsButton = Main:CreateButton({
-         Name = "Zen Hub",
+      local rwrfd44 = Main:CreateToggle({
+         Name = "Auto Click Camera",
+         CurrentValue = false,
+         Flag = "fafafsfsfghuiyut4", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+         Callback = function(Value)
+            _G.Click = Value
+
+            while _G.Click == true do
+            local Target = game:GetService("ReplicatedStorage").Events.Scribble;
+            Target:Fire();
+            wait(0.00000000000000000000000000000000000000000000000000000000000000000000001)
+            end
+         end,
+      })
+      
+      local TeleportYTSIMZDropdown = Main:CreateDropdown({
+         Name = "Teleports",
+         Options = {"Enter House","Enter Upgrades","Enter Elevator"},
+         CurrentOption = "Option 1",
+         Flag = "Droy6y4ytrfpdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+         Callback = function(Option)
+         if Option == "Enter House" then
+            local bool_143 = true;
+            local Targete = game:GetService("ReplicatedStorage").Events["_EnterHouse"];
+            Targete:Fire(bool_143);
+      elseif Option == "Enter Upgrades" then
+         local Targeta = game:GetService("ReplicatedStorage").Events["_EnterUpgrades"];
+            Targeta:Fire();
+      elseif Option == "Enter Elevator" then
+         local Targeto = game:GetService("ReplicatedStorage").Events.EnterElevator;
+            Targeto:Fire();
+   end
+         end,
+      })
+
+      local Dfsdfsfgfd = Main:CreateButton({
+         Name = "Free Camera (BST)",
          Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))() 
+            local bool_1 = false;
+            local Target = game:GetService("ReplicatedStorage").Remotes.Events.BCUT1;
+            Target:FireServer(bool_1);
          end,
       })
+   
 
-      local MukuroHubBloxFruitsButton = Main:CreateButton({
-         Name = "Mukuro Hub",
-         Callback = function()
-         loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
-         end,
-      })
 
-      local ThunderZHubBloxFruitsButton = Main:CreateButton({
-         Name = "Thunder Z Hub",
-         Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Script"))()
-         end,
-      })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   elseif game.PlaceId == 2753915549 or 7449423635 or 4442272183 then --Blox Fruits
+      local Mai666nSec = Main:CreateSection("Blox Fruits")
+   
+      Rayfield:Notify({
+         Title = "Game Detected:",
+         Content = "Blox Fruits",
+         Duration = 5.5,
+         Image = 4483362458,
+         })
+   
+         local AutoConfettiBloxFruitsToggle = Main:CreateToggle({
+            Name = "Auto Confetti",
+            CurrentValue = false,
+            Flag = "AutoConfettiBloxFruitsToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+            _G.AutoConfetti = Value
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Confetti"))() 
+            end,
+         })
+   
+         local ZenHubBloxFruitsButton = Main:CreateButton({
+            Name = "Zen Hub",
+            Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))() 
+            end,
+         })
+   
+         local MukuroHubBloxFruitsButton = Main:CreateButton({
+            Name = "Mukuro Hub",
+            Callback = function()
+            loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+            end,
+         })
+   
+         local ThunderZHubBloxFruitsButton = Main:CreateButton({
+            Name = "Thunder Z Hub",
+            Callback = function()
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Script"))()
+            end,
+         })
 else
    Rayfield:Notify({
       Title = "Error",
