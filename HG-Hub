@@ -840,11 +840,66 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
       })
    
 
+      elseif game.PlaceId == 6772424226 then
+         local Mai34434348ghnfd443Sec = Main:CreateSection("2 Player Millionaire Tycoon")
 
+   Rayfield:Notify({
+      Title = "Game Detected:",
+      Content = "2 Player Millionaire Tycoon",
+      Duration = 5.5,
+      Image = 4483362458,
+      })
 
+      local Input = Main:CreateInput({
+         Name = "Give Money",
+         PlaceholderText = "9999999999",
+         RemoveTextAfterFocusLost = false,
+         Callback = function(Text)
+         --// Services \\--
+local Workspace = game:GetService("Workspace")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
 
+--// Variables \\--
+local Player = Players.LocalPlayer
+local FakeData = {Name="Dropper1";Class={Upgrade={Value=Text}}}
+local Tycoon = nil
 
+--// Get Tycoon \\--
+for _, Folder in next, Workspace:WaitForChild("Tycoons"):GetChildren() do
+    if Folder.Values.Owner.Value == Player then
+        Tycoon = Folder
+        break
+    end
+end
+if Tycoon == nil then
+    warn("Patched :(")
+    return
+end
 
+--// BIG MONEY \\--
+local Conn;
+Conn = Tycoon:WaitForChild("Drops").ChildAdded:Connect(function(A)
+    task.wait()
+    if A:IsA("MeshPart") then
+        if Conn ~= nil then
+            Conn:Disconnect()
+            Conn = nil
+        end
+        ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Upgrade"):FireServer(FakeData, A.Name)
+    end
+end)
+         end,
+      })
+
+      local HTU12 = [[
+
+1: Write a value in the input
+2: Press Enter and Wait 1 Second
+3: Go to the money dropper and get the money
+      ]]
+
+      local Paragraph = Main:CreateParagraph({Title = "How To Use", Content = HTU12})
 
 
 
