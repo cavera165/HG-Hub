@@ -776,6 +776,22 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
       Image = 4483362458,
       })
 
+      local rwrfd44 = Main:CreateToggle({
+         Name = "Auto Press - E",
+         CurrentValue = false,
+         Flag = "fafafsfsfghuiyut4", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+         Callback = function(Value)
+            _G.Click = Value
+
+            local vim = game:service'VirtualInputManager'
+
+            while _G.Click == true do
+            vim:SendKeyEvent(true, "E", false, game)
+            wait(0.0000000000000000000000000000000000000000000000000000000001)
+            end
+         end,
+      })
+
       local gdsfggresgdfgdgd = Main:CreateToggle({
          Name = "Auto Rebirth",
          CurrentValue = false,
@@ -790,21 +806,6 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
             Target:FireServer(bool_1);
             wait(0.000000000000000000000000000000000000000000000000000000001)
             
-            end
-         end,
-      })
-
-      local rwrfd44 = Main:CreateToggle({
-         Name = "Auto Click Camera",
-         CurrentValue = false,
-         Flag = "fafafsfsfghuiyut4", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-         Callback = function(Value)
-            _G.Click = Value
-
-            while _G.Click == true do
-            local Target = game:GetService("ReplicatedStorage").Events.Scribble;
-            Target:Fire();
-            wait(0.00000000000000000000000000000000000000000000000000000000000000000000001)
             end
          end,
       })
