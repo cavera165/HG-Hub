@@ -124,7 +124,14 @@ local FlyButtonUniversal = Universal:CreateButton({
    local DomainXUniversalButton = Universal:CreateButton({
       Name = "Domain X",
       Callback = function()
-         loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source', true))()
+      end,
+   })
+
+   local RejoinUniversalButton = Universal:CreateButton({
+      Name = "Rejoin",
+      Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Rejoin'))()
       end,
    })
 
