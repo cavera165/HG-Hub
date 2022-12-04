@@ -325,6 +325,46 @@ local DiaryFramePLToggle = Main:CreateToggle({
    end,
 })
 
+elseif game.PlaceId == 2753915549 then --Blox Fruits
+   local MainSec = Main:CreateSection("Blox Fruits")
+
+   Rayfield:Notify({
+      Title = "Game Detected:",
+      Content = "Blox Fruits",
+      Duration = 5.5,
+      Image = 4483362458,
+      })
+
+      local AutoConfettiBloxFruitsToggle = Main:CreateToggle({
+         Name = "Auto Confetti",
+         CurrentValue = false,
+         Flag = "AutoConfettiBloxFruitsToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+         Callback = function(Value)
+         _G.AutoConfetti = Value
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Confetti"))() 
+         end,
+      })
+
+      local ZenHubBloxFruitsButton = Main:CreateButton({
+         Name = "Zen Hub",
+         Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))() 
+         end,
+      })
+
+      local MukuroHubBloxFruitsButton = Main:CreateButton({
+         Name = "Mukuro Hub",
+         Callback = function()
+         loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+         end,
+      })
+
+      local ThunderZHubBloxFruitsButton = Main:CreateButton({
+         Name = "Thunder Z Hub",
+         Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Script"))()
+         end,
+      })
 
 else
    Rayfield:Notify({
