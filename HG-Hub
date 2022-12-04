@@ -812,7 +812,7 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
       local TeleportYTSIMZDropdown = Main:CreateDropdown({
          Name = "Teleports",
          Options = {"Enter House","Enter Upgrades","Enter Elevator"},
-         CurrentOption = "Option 1",
+         CurrentOption = "Select a Teleport",
          Flag = "Droy6y4ytrfpdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
          Callback = function(Option)
          if Option == "Enter House" then
