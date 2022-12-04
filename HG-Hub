@@ -325,7 +325,7 @@ local DiaryFramePLToggle = Main:CreateToggle({
    end,
 })
 
-elseif game.PlaceId == 2753915549 then --Blox Fruits
+elseif game.PlaceId == 2753915549 or 7449423635 or 4442272183 then --Blox Fruits
    local MainSec = Main:CreateSection("Blox Fruits")
 
    Rayfield:Notify({
