@@ -899,9 +899,18 @@ end)
 3: Go to the money dropper and get the money
       ]]
 
-      local Paragraph = Main:CreateParagraph({Title = "How To Use", Content = HTU12})
+      local Parade432graph = Main:CreateParagraph({Title = "How To Use Money Adder", Content = HTU12})
 
-
+      local But6445764eton = Main:CreateButton({
+         Name = "RIPS Gui - Auto buy, AutoFarm & More",
+         Callback = function()
+            _G.RedGUI = true
+            _G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+            --Themes: Light, Dark, Mocha, Aqua and Jester
+            
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/2PlayerMillionaireTycoon.lua"))()
+         end,
+      })
 
 
 
