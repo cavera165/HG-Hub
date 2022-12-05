@@ -787,7 +787,7 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
 
             while _G.Click == true do
             vim:SendKeyEvent(true, "E", false, game)
-            wait(0.0000000000000000000000000000000000000000000000000000000001)
+            wait(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
             end
          end,
       })
@@ -800,13 +800,19 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
             _G.Rebirth = Value
 
             while _G.Rebirth == true do
-            
+
+
+            local Target = game:GetService("ReplicatedStorage").Remotes.Functions.Rebirth;
+            Target:InvokeServer();
+            wait(3)
+            end
+--[[
             local bool_1 = false;
             local Target = game:GetService("ReplicatedStorage").Remotes.Events.BCUT1;
             Target:FireServer(bool_1);
             wait(0.000000000000000000000000000000000000000000000000000000001)
             
-            end
+            end]]
          end,
       })
       
