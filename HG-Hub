@@ -918,20 +918,99 @@ end)
          end,
       })
 
+      elseif game.PlaceId == 6403373529 then --Slap Battles
+
+         local Ma4567infd443Sec = Main:CreateSection("Slap Battles")
+
+         Rayfield:Notify({
+            Title = "Game Detected:",
+            Content = "Slap Battles",
+            Duration = 5.5,
+            Image = 4483362458,
+            })
+
+local rwrwer645645635Button = Main:CreateButton({
+    Name = "Dizzy Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
+   end,
+ })
+
+local rwrwer35Button = Main:CreateButton({
+   Name = "Slap Royale GUI",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cavera165/scpts/main/432"))()
+   end,
+})
+
+local rwrwer354334534Button = Main:CreateButton({
+   Name = "OK Hub",
+   Callback = function()
+      loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/cheesynob39/Keys/main/Main.lua"))()
+   end,
+})
 
 
+local rwrwerFreeRobux35Button = Main:CreateButton({
+   Name = "Slap Royale GUI",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cavera165/scpts/main/432"))()
+   end,
+})
 
+local rwr545647657475456wer35Button = Main:CreateButton({
+   Name = "Rogue Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))()
+   end,
+})
 
+   elseif game.PlaceId == 6284583030 then
 
+      local Ma4567infd445343535354533Sec = Main:CreateSection("Pet Simulator X")
 
+      Rayfield:Notify({
+         Title = "Game Detected:",
+         Content = "Pet Simulator X",
+         Duration = 5.5,
+         Image = 4483362458,
+         })
 
+         local dvdtextoWD = [[
+            
+1: Click the "copy key link" button
+2: Paste the link in your browser
+3: Copy the key
+4: Paste the key in the input
+5: Press Enter
+         ]]
 
+         local Par445677899089098067975835424cnbvnhgfvbagraph = Main:CreateParagraph({Title = "How To Get Project WD Key", Content = dvdtextoWD})
 
+         local Butt53b4b6n4484500efrwevnugvugtertgbvuh423534265624opasalveon = Main:CreateButton({
+            Name = "Copy key link",
+            Callback = function()
+            setclipboard("https://w41k3rscripts.com/projectwd/index.php")
+            end,
+         })
 
+         local Inh635g463b58n65n3m4v346dput = Main:CreateInput({
+            Name = "Key:",
+            PlaceholderText = "Paste the key here",
+            RemoveTextAfterFocusLost = false,
+            Callback = function(Text)
+            getgenv().key = Text
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
+            ---key from https://discord.gg/u7JNWQcgsU 
+            end,
+         })
 
-
-
-
+         local But42432442667tghbne56bucc4wvyw4yn3ui56ton = Main:CreateButton({
+            Name = "Copy Project WD discord link",
+            Callback = function()
+            setclipboard("https://discord.gg/u7JNWQcgsU")
+            end,
+         })
 
 
 
