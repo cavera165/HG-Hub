@@ -804,7 +804,7 @@ elseif game.PlaceId == 11109756592 then -- YouTube Simulator Z
 
             local Target = game:GetService("ReplicatedStorage").Remotes.Functions.Rebirth;
             Target:InvokeServer();
-            wait(3)
+            wait(7)
             end
 --[[
             local bool_1 = false;
