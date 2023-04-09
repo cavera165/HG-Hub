@@ -1012,6 +1012,94 @@ local rwr545647657475456wer35Button = Main:CreateButton({
             end,
          })
 
+        elseif game.PlaceId == 7369208341 then --SuperHero: Universe
+
+            local Ma4567infd44554235234534345343535354533Sec = Main:CreateSection("SuperHero: Universe")
+
+            Rayfield:Notify({
+               Title = "Game Detected:",
+               Content = "SuperHero: Universe",
+               Duration = 5.5,
+               Image = 4483362458,
+               })
+
+               local ButtonSuperHeroUniverse = Main:CreateButton({
+                Name = "Add 1M Money (Method 1)",
+                Callback = function()
+                    local string_1 = "Ice Man";
+                    local number_1 = -1000000;
+                    local Target = game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW;
+                    Target:FireServer(string_1, number_1);
+                end,
+             })
+
+             local ButtonSuperHeroUniverse323354465 = Main:CreateButton({
+                Name = "Add 1M Money (Method 2)",
+                Callback = function()
+                    local string_1 = "JLPack";
+                    local string_2 = -1000000;
+                    local Target = game:GetService("ReplicatedStorage").Remotes.PurchaseCharPack;
+                    Target:FireServer(string_1, string_2);
+                end,
+             })
+
+             local ButtonSuperHeroUniverse433465467744756 = Main:CreateButton({
+                Name = "Add 1M Money (Method 3)",
+                Callback = function()
+                    local string_1 = "1.5RELEASED";
+                    local number_1 = -1000000;
+                    local Target = game:GetService("ReplicatedStorage").Remotes.CodesClaimed;
+                    Target:FireServer(string_1, number_1);
+                end,
+             })
+
+               local LabelSuperHeroUniverse4324242443424234 = Main:CreateLabel("Nao coloque numeros muito altos para nao bugar o dinheiro e deixar negativo")
+
+               local InputSuperHeroUniverse424242423978654 = Main:CreateInput({
+                Name = "Add Money (Method 1)",
+                PlaceholderText = "10000000",
+                RemoveTextAfterFocusLost = false,
+                Callback = function(Text)
+               
+
+                local string_1 = "Ice Man";
+                local number_1 = -Text;
+                local Target = game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW;
+                Target:FireServer(string_1, number_1);
+
+
+                end,
+             })
+
+             local In534535putSuperHeroUniverse424242423978654 = Main:CreateInput({
+                Name = "Add Money (Method 2)",
+                PlaceholderText = "10000000",
+                RemoveTextAfterFocusLost = false,
+                Callback = function(Text)
+               
+                local string_1 = "JLPack";
+                local string_2 = -Text;
+                local Target = game:GetService("ReplicatedStorage").Remotes.PurchaseCharPack;
+                Target:FireServer(string_1, string_2);
+
+                end,
+             })
+
+             local InputSJAMALuperHeroUniverse424242423978654 = Main:CreateInput({
+                Name = "Add Money (Method 3)",
+                PlaceholderText = "10000000",
+                RemoveTextAfterFocusLost = false,
+                Callback = function(Text)
+                
+                    
+                local string_1 = "1.5RELEASED";
+                local number_1 = -Text;
+                local Target = game:GetService("ReplicatedStorage").Remotes.CodesClaimed;
+                Target:FireServer(string_1, number_1);
+
+
+                end,
+             })
 
 
    elseif game.PlaceId == 2753915549 or 7449423635 or 4442272183 then --Blox Fruits
