@@ -14,12 +14,12 @@ local Window = Rayfield:CreateWindow({
        Invite = "GGhDPEvz95", -- The Discord invite code, do not include discord.gg/
        RememberJoins = false -- Set this to false to make them join the discord every time they load it up
     },
-    KeySystem = true,
+    KeySystem = false,
     KeySettings = {
        Title = "HG Hub",
        Subtitle = "Key System",
        Note = "Join the discord (discord.gg/GGhDPEvz95)",
-       FileName = "HGKey",
+       FileName = "HGHubKey",
        SaveKey = true,
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
        Key = "HG_Hub-g7RtUcJkam"
@@ -1125,7 +1125,7 @@ local rwr545647657475456wer35Button = Main:CreateButton({
                CurrentValue = false,
                Flag = "Togr43v53v709SuperHeroPacksLoopToggleFlag409997354gle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
                Callback = function(Value)
-               
+                
 _G.GGp = Value
 
 while _G.GGp do
@@ -1694,6 +1694,57 @@ game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW:FireServer(unpack(a
                end,
             })
 
+         elseif game.PlaceId == 6650622018 then
+
+            local Mai6rwer6353656768654BlockMine524fd653453435nSec = Main:CreateSection("Block Mine")
+   
+            Rayfield:Notify({
+               Title = "Game Detected:",
+               Content = "Block Mine",
+               Duration = 5.5,
+               Image = 4483362458,
+               })
+
+               local Button = Main:CreateButton({
+                  Name = "Get 1B Strength",
+                  Callback = function()
+
+                     local number_1 = 100000000;
+                     local Target = game:GetService("ReplicatedStorage").Remotes.Anvil;
+                     Target:FireServer(number_1);
+                                       end,
+               })
+
+               local Button1 = Main:CreateButton({
+                  Name = "Remove 1B Strength",
+                  Callback = function()
+
+                     local number_1 = -100000000;
+                     local Target = game:GetService("ReplicatedStorage").Remotes.Anvil;
+                     Target:FireServer(number_1);
+                                       end,
+               })
+
+               local Toggle = Main:CreateToggle({
+                  Name = "Auto Win",
+                  CurrentValue = false,
+                  Flag = "AutoWinFarmMineBlockRoblox42u48935783845gefgdcubanovivido", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+                  Callback = function(Value)
+            
+                     while Value do
+                        
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1304.19995, -121.449997, 58, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(.7)
+                     end
+                  
+                 
+                  end,
+               })
+
+         
+
+
+
    elseif game.PlaceId == 2753915549 or 7449423635 or 4442272183 then --Blox Fruits
       local Mai6rwer635524fd653453435nSec = Main:CreateSection("Blox Fruits")
    
@@ -1702,16 +1753,6 @@ game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW:FireServer(unpack(a
          Content = "Blox Fruits",
          Duration = 5.5,
          Image = 4483362458,
-         })
-   
-         local AutoConfettiBloxFruitsToggle = Main:CreateToggle({
-            Name = "Auto Confetti",
-            CurrentValue = false,
-            Flag = "AutoConfettiBloxFruitsToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-            Callback = function(Value)
-            _G.AutoConfetti = Value
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Confetti"))() 
-            end,
          })
    
          local ZenHubBloxFruitsButton = Main:CreateButton({
