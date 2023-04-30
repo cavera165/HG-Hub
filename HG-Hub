@@ -1423,6 +1423,11 @@ local args1 = {
 }
 
 game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW:FireServer(unpack(args1))
+
+local string4_1 = "Dr Fate";
+local number4_1 = 0;
+local Targetsad0 = game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW;
+Targetsad0:FireServer(string4_1, number4_1);
                  
                  end
                end,
@@ -1689,6 +1694,13 @@ game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW:FireServer(unpack(a
       [1] = "Ice Man",
       [2] = 0
   }
+
+
+local string4_1 = "Dr Fate";
+local number4_1 = 0;
+local Targetsad0 = game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW;
+Targetsad0:FireServer(string4_1, number4_1);
+
   
   game:GetService("ReplicatedStorage").Remotes.PurchaseCharNEW:FireServer(unpack(args1))
                end,
