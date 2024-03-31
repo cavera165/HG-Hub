@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua))()
 
 local Window = Rayfield:CreateWindow({
     Name = "HG",
@@ -1754,8 +1754,136 @@ wait(.7)
                })
 
          
+   elseif game.PlaceId == 12367107026 then
+      local Mai6rwer63552eqw4fd653453435nSec = Main:CreateSection("Punch a Skibidi")
+   
+      Rayfield:Notify({
+         Title = "Game Detected:",
+         Content = "Punch a Skibidi",
+         Duration = 5.5,
+         Image = 4483362458,
+         })
+   
+         local Toggle = Main:CreateToggle({
+            Name = "Auto Win",
+            CurrentValue = false,
+            Flag = "Toggl42dsjhdjhiwiekAutoWinPunchAskibidihehehehae1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+               _G.AutoTpWin15k = Value
+               while _G.AutoTpWin15k do
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(466.08844, 1.1883707, -241.1427, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+               wait()
+               end
+            end,
+         })
+         local Mai6rweScrewefsdklFODAzeKDkLSJFo3u42980ukxuxj23eu089mzmy230kc3ujc02984729052789GostoDepudimErocamboler635524fd653453435nSec = Main:CreateToggle({
+            Name = "Auto Rebirth",
+            CurrentValue = false,
+            Flag = "Togg5Aut543oReb534irthP4565454536unchAS5545434kib355536456d53454iGame5Scr3534535pt53Auto45345345535345353Re4534645birth355Pu343n5ch353543535453535ASki543535435bidiGa645646446564e346465345S64554c456r46ip46tA46u446353546to66464565R646e64646446bi35r56464thP3353un35ch535353AS535kibid43553Ga353me543Scri35435ptle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+            _G.AutoRebirthPunchASkibidiGameScript = Value
 
+            while _G.AutoRebirthPunchASkibidiGameScript do
+               game:GetService("ReplicatedStorage").GameClient.Events.RemoteEvent.RebirthEvent:FireServer()
+               wait(.1)
+            end
+            end,
+         })
 
+         local RWToggle = Main:CreateToggle({
+            Name = "AutoFarm Strength",
+            CurrentValue = false,
+            Flag = "TogglAutoFarm StrengthAutoFarm StrengthAutoFarm StrengthSkibidiToiletPunchASkibidie1StrengthSkibidiToiletPunchASkibidie1StrengthSkibidiToiletPunchASkibidie1StrengthSkibidiToiletPunchASkibidie1StrengthSkibidiToiletPunchASkibidie1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+           while Value do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(444.214172, 6.50978851, 3.76999712, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            local args = {
+               [1] = "Combat"
+           }
+           
+           game:GetService("Players").LocalPlayer.PlayerGui.SCRIPTS.Punch.Function:FireServer(unpack(args))
+wait()           
+           end
+            end,
+         })
+
+--[[
+         local Tab = Window:CreateTab("Eggs", 4483362458) -- Title, Image
+
+         local Section = Tab:CreateSection("Buy Egg")
+         local Dropdown = Tab:CreateDropdown({
+            Name = "Buy a Egg",
+            Options = {"Egg1","Egg2","Egg3","Egg4","Egg5","Egg6","Egg7","Egg8"},
+            CurrentOption = {""},
+            MultipleOptions = false,
+            Flag = "Djkfskjndfkjnsjnfkh458309-09113d.dsfsdfpPunchASkibidiFlagBuyONEEggYesYesYestigraoDigoTesaoDigoCUDigoBatataropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Option)
+           if Option == "Egg1" then
+            local args = {
+               [1] = "Common Egg",
+               [2] = "Buy1"
+           }
+           
+           game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+
+           elseif Option == "Egg2" then
+            local args = {
+               [1] = "W2E1",
+               [2] = "Buy1"
+           }
+           
+           game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+
+           elseif Option == "Egg3" then
+            local args = {
+               [1] = "W3E1",
+               [2] = "Buy1"
+           }
+           
+           game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+elseif Option == "Egg4" then
+   local args = {
+      [1] = "W4E1",
+      [2] = "Buy1"
+  }
+  
+  game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+      elseif Option == "Egg5" then
+         local args = {
+            [1] = "W5E1",
+            [2] = "Buy1"
+        }
+        
+        game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+        
+        elseif Option == "Egg6" then
+         local args = {
+            [1] = "W6E1",
+            [2] = "Buy1"
+        }
+        
+        game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+
+      elseif Option == "Egg7" then
+         local args = {
+            [1] = "W7E1",
+            [2] = "Buy1"
+        }
+        
+        game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+
+        elseif Option == "Egg8" then
+         local args = {
+            [1] = "W8E1",
+            [2] = "Buy1"
+        }
+        
+        game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+        
+           end
+            end,
+         })
+]]
 
    elseif game.PlaceId == 2753915549 or 7449423635 or 4442272183 then --Blox Fruits
       local Mai6rwer635524fd653453435nSec = Main:CreateSection("Blox Fruits")
